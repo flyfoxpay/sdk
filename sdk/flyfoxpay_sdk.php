@@ -212,7 +212,7 @@ $url = "https://sc-i.pw/api/check_withdraw/";//API位置
        "id"=>$id, //商家ID
        "mail"=>$mail, //商家EMAIL
 	   "withdrawid"=>$withdrawid,//提現ID
-       ))); 
+       ); 
 $output = curl_post($url,$post_value);
 $json=json_decode($output, true);
 
