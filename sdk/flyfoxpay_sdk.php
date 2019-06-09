@@ -82,7 +82,7 @@ function addpay($trade_no, $trade_name, $amount, $type,$customize1,$customize2,$
  $id=$this->flyfoxpay_config['id'];
  $mail=$this->flyfoxpay_config['mail'];
  $return=$this->flyfoxpay_config['return'];
- $url = "https://sc-i.pw/api/";//API位置
+ $url = "https://api.flyfoxpay.com/api/";//API位置
  $post_value=array(
        "key"=>$key, //商家KEY
        "id"=>$id, //商家ID
@@ -108,7 +108,7 @@ function check($trade_no,$trade_nos) {
  $key=$this->flyfoxpay_config['key'];
  $id=$this->flyfoxpay_config['id'];
  $mail=$this->flyfoxpay_config['mail'];
- $url = "https://sc-i.pw/api/check/";//API位置
+ $url = "https://api.flyfoxpay.com/api/check/";//API位置
  $post_value= array(
        "key"=>$key, //商家KEY
        "id"=>$id, //商家ID
@@ -150,7 +150,7 @@ function check_order() {
 $key=$this->flyfoxpay_config['key'];
 $id=$this->flyfoxpay_config['id'];
 $mail=$this->flyfoxpay_config['mail'];
-$url = "https://sc-i.pw/api/check_order/";//API位置
+$url = "https://api.flyfoxpay.com/api/check_order/";//API位置
  
 $post_value= array("key"=>$key, //商家KEY
        "id"=>$id, //商家ID
@@ -170,7 +170,7 @@ function search() {
 $key=$this->flyfoxpay_config['key'];
 $id=$this->flyfoxpay_config['id'];
 $mail=$this->flyfoxpay_config['mail'];
-$url = "https://sc-i.pw/api/search/";//API位置
+$url = "https://api.flyfoxpay.com/api/search/";//API位置
 $post_value = array("key"=>$key, //商家KEY
        "id"=>$id, //商家ID
        "mail"=>$mail, //商家EMAIL
@@ -189,7 +189,7 @@ function list_withdraw() {
 $key=$this->flyfoxpay_config['key'];
 $id=$this->flyfoxpay_config['id'];
 $mail=$this->flyfoxpay_config['mail'];
-$url = "https://sc-i.pw/api/list_withdraw/";//API位置
+$url = "https://api.flyfoxpay.com/api/list_withdraw/";//API位置
  $post_value= array("key"=>$key, //商家KEY
        "id"=>$id, //商家ID
        "mail"=>$mail, //商家EMAIL
@@ -207,7 +207,7 @@ function check_withdraw($withdrawid) {
 $key=$this->flyfoxpay_config['key'];
 $id=$this->flyfoxpay_config['id'];
 $mail=$this->flyfoxpay_config['mail'];
-$url = "https://sc-i.pw/api/check_withdraw/";//API位置
+$url = "https://api.flyfoxpay.com/api/check_withdraw/";//API位置
  $post_value= array("key"=>$key, //商家KEY
        "id"=>$id, //商家ID
        "mail"=>$mail, //商家EMAIL
@@ -226,7 +226,7 @@ function withdraw($type,$money,$bank,$bank_name,$bank_code) {
 $key=$this->flyfoxpay_config['key'];
 $id=$this->flyfoxpay_config['id'];
 $mail=$this->flyfoxpay_config['mail'];
-$url = "https://sc-i.pw/api/withdraw/";//API位置
+$url = "https://api.flyfoxpay.com/api/withdraw/";//API位置
 $post_value= array("key"=>$key, //商家KEY
        "id"=>$id, //商家ID
        "mail"=>$mail, //商家EMAIL
@@ -253,7 +253,7 @@ function rekey() {
 $key=$this->flyfoxpay_config['key'];
 $id=$this->flyfoxpay_config['id'];
 $mail=$this->flyfoxpay_config['mail'];
-$url = "https://sc-i.pw/api/rekey/";//API位置
+$url = "https://api.flyfoxpay.com/api/rekey/";//API位置
  
 $post_value= array("key"=>$key, //商家KEY
        "id"=>$id, //商家ID
@@ -273,7 +273,7 @@ function passwd($passwdold,$passwdnew,$passwdnews) {
 $key=$this->flyfoxpay_config['key'];
 $id=$this->flyfoxpay_config['id'];
 $mail=$this->flyfoxpay_config['mail'];
-$url = "https://sc-i.pw/api/passwd/";//API位置
+$url = "https://api.flyfoxpay.com/api/passwd/";//API位置
 $post_value= array("key"=>$key, //商家KEY
        "id"=>$id, //商家ID
        "mail"=>$mail, //商家EMAIL
@@ -294,7 +294,7 @@ function callback($notify_url) {
 $key=$this->flyfoxpay_config['key'];
 $id=$this->flyfoxpay_config['id'];
 $mail=$this->flyfoxpay_config['mail'];
-$url = "https://sc-i.pw/api/callback/";//API位置
+$url = "https://api.flyfoxpay.com/api/callback/";//API位置
 $post_value= array("key"=>$key, //商家KEY
        "id"=>$id, //商家ID
        "mail"=>$mail, //商家EMAIL
@@ -315,7 +315,7 @@ function cancel_order($trade_no) {
 $key=$this->flyfoxpay_config['key'];
 $id=$this->flyfoxpay_config['id'];
 $mail=$this->flyfoxpay_config['mail'];
-$url = "https://sc-i.pw/api/cancel_order/";//API位置
+$url = "https://api.flyfoxpay.com/api/cancel_order/";//API位置
 $post_value= array("key"=>$key, //商戶KEY
        "id"=>$id, //商戶ID
        "mail"=>$mail, //商戶EMAIL
@@ -334,7 +334,7 @@ function cancel_withdraw($no) {
 $key=$this->flyfoxpay_config['key'];
 $id=$this->flyfoxpay_config['id'];
 $mail=$this->flyfoxpay_config['mail'];
-$url = "https://sc-i.pw/api/cancel_withdraw/";//API位置
+$url = "https://api.flyfoxpay.com/api/cancel_withdraw/";//API位置
 $post_value= array("key"=>$key, //商戶KEY
        "id"=>$id, //商戶ID
        "mail"=>$mail, //商戶EMAIL
